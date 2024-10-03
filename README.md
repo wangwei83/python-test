@@ -9,3 +9,6 @@ conda install python
 pip install tifffile
 
 pip install matplotlib tifffile
+
+
+zgp_efficientpy38t113
