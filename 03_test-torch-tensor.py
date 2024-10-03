@@ -23,7 +23,9 @@ print(x)
 # 检查是否可以使用 GPU
 if torch.cuda.is_available():
     device = torch.device("cuda")
+    # 采用torch.ones_like，创建一个跟x一样大小的张量y，但是直接在 GPU 上创建
     y = torch.ones_like(x, device=device)  # 直接在 GPU 上创建张量
+          
     print(y)
     x = x.to(device)  # 将张量移动到 GPU
     z = x + y
