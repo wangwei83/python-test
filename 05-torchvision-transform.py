@@ -19,7 +19,7 @@ transform = transforms.Compose([
 ])
 
 # 打开图像
-image = Image.open('./000000001155.jpg')
+image = Image.open('./05-000000001155.jpg')
 
 # 应用变换
 transformed_image = transform(image)

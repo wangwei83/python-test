@@ -6,11 +6,11 @@ import tifffile as tiff
 data = np.random.rand(100, 100)
 
 # 保存数组到 output.tif 文件
-tiff.imwrite('output.tif', data)
+tiff.imwrite('02-output.tif', data)
 
 # 读取并可视化 output.tif 文件
-image = tiff.imread('output.tif')
+image = tiff.imread('02-output.tif')
 plt.imshow(image, cmap='gray')
-plt.title('Visualization of output.tif')
+plt.title('Visualization of 02-output.tif')
 plt.colorbar()
 plt.show()
