@@ -1,6 +1,6 @@
 # (zgp_efficientpy38t113) wangwei83@wangwei83-System-Product-Name:~/Desktop/python-test$ python 06-argparse.py --name wangwei --age 40
 # Hello, wangwei! You are 40 years old.
-# (zgp_efficientpy38t113) wangwei83@wangwei83-System-Product-Name:~/Desktop/python-test$ 
+
 
 import argparse
 
