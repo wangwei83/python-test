@@ -22,3 +22,13 @@ tqdm.pandas()
 
 df = pd.DataFrame({'a': range(1000)})
 df['b'] = df['a'].progress_apply(lambda x: x**2)
+
+
+
+from tqdm import tqdm
+import time
+
+for i in tqdm(range(10), desc='Outer loop'):
+    for j in tqdm(range(100), desc='Inner loop', leave=False):
+        time.sleep(0.01)
+
