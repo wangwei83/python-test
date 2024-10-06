@@ -86,3 +86,16 @@ with torch.no_grad():
 print(f'Accuracy: {100 * correct / total}%')
 
 print("Done!")
+
+import matplotlib.pyplot as plt
+# 可视化样本
+fig, ax = plt.subplots(nrows=2, ncols=2, sharex=True, sharey=True)
+ax = ax.flatten()
+for i in range(4):
+    img = train_images[i].permute(1, 2, 0).numpy().squeeze()
+    ax[i].imshow(img, cmap='gray')
+    ax[i].set_title(f'Label: {train_labels[i].item()}')
+    ax[i].set_xticks([])
+    ax[i].set_yticks([])
+plt.tight_layout()
+plt.show()

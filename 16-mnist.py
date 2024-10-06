@@ -93,3 +93,16 @@ model.fit(train_images, train_labels, epochs=5, batch_size=32)
 model.evaluate(test_images, test_labels)
 
 print("Done!")
+
+# 2024-10-05 22:05:06.139134: W external/local_tsl/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 188160000 exceeds 10% of free system memory.
+# Epoch 1/5
+# 1875/1875 ━━━━━━━━━━━━━━━━━━━━ 3s 1ms/step - accuracy: 0.8604 - loss: 0.4783.3984
+# Epoch 2/5
+# 1875/1875 ━━━━━━━━━━━━━━━━━━━━ 2s 1ms/step - accuracy: 0.9568 - loss: 0.1456  
+# Epoch 3/5
+# 1875/1875 ━━━━━━━━━━━━━━━━━━━━ 2s 1ms/step - accuracy: 0.9675 - loss: 0.1051  
+# Epoch 4/5
+# 1875/1875 ━━━━━━━━━━━━━━━━━━━━ 2s 1ms/step - accuracy: 0.9734 - loss: 0.0868  
+# Epoch 5/5
+# 1875/1875 ━━━━━━━━━━━━━━━━━━━━ 2s 1ms/step - accuracy: 0.9785 - loss: 0.0706  
+# 313/313 ━━━━━━━━━━━━━━━━━━━━ 0s 550us/step - accuracy: 0.9708 - loss: 0.0918 
