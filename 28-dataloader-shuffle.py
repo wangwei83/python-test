@@ -1,3 +1,5 @@
+
+# 以下是一个使用 DataLoader 的示例，其中包含 train_set 数据集，批次大小为 1，数据打乱，使用 4 个工作进程，并启用锁页内存：
 import torch
 from torch.utils.data import DataLoader
 from torchvision.datasets import MNIST
