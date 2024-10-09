@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # 生成示例数据
-data = np.random.normal(loc=0, scale=1, size=1000)  # 正态分布数据
-# data = np.random.exponential(scale=1, size=1000)  # 非正态分布数据
+# data = np.random.normal(loc=0, scale=1, size=1000)  # 正态分布数据
+data = np.random.exponential(scale=1, size=1000)  # 非正态分布数据
 
 # 将数据转换为 DataFrame
 df = pd.DataFrame(data, columns=['Column1'])
